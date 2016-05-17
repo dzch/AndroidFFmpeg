@@ -241,6 +241,7 @@ function build_ffmpeg
 				--enable-demuxer=h264 --enable-demuxer=aac \
 						--enable-parser=h264 --enable-parser=aac \
 						--enable-gpl --enable-libx264 \
+						--enable-avresample \
 	    $ADDITIONAL_CONFIGURE_FLAG
 	make clean
 	make -j8 install
